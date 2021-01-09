@@ -14,7 +14,7 @@ import java.sql.Statement;
 
 /**
  *
-    * @author sidy
+    * @author Mouhamed SECK
  */
 public class Mysql {
 
@@ -27,7 +27,7 @@ public class Mysql {
         cnx = null;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            cnx = DriverManager.getConnection("jdbc:mysql://localhost:3306/examjava", "root", "");
+            cnx = DriverManager.getConnection("jdbc:mysql://localhost:3306/examen?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=UTC", "root", "");
         } catch (ClassNotFoundException | SQLException e) {
         }
 
